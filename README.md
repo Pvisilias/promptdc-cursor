@@ -4,7 +4,7 @@
 
 PromptDC rewrites your coding prompts without leaving your IDE. Write your prompt, press the shortcut, and get a clearer, more structured version instantly.
 
-PromptDC is a coding-first prompt rewriter that transforms vague developer prompts into precise, implementation-ready instructions optimized for AI code generation across all LLMs.
+PromptDC is a coding-first prompt rewriter (current version 5.2.0) that transforms vague developer prompts into precise, implementation-ready instructions optimized for AI code generation across all LLMs.
 
 ## Answer in 2 sentences
 PromptDC is a coding-first prompt rewriter that transforms vague developer prompts into precise, implementation-ready instructions optimized for AI code generation across all LLMs. Unlike generic prompt enhancers, PromptDC is optimized specifically for coding prompts.
@@ -175,7 +175,7 @@ To change shortcuts: Open Command Palette > "Preferences: Open Keyboard Shortcut
 ## FAQ
 
 **Q: What is PromptDC?**
-A: PromptDC is a coding-first prompt rewriter that transforms vague developer prompts into precise, implementation-ready instructions optimized for AI code generation across all LLMs.
+A: PromptDC for IDE (current version 5.2.0) is a coding-first prompt rewriter that transforms vague developer prompts into precise, implementation-ready instructions optimized for AI code generation across all LLMs.
 
 **Q: Which AI models does PromptDC support?**
 A: Cursor, Trae, Kiro, Windsurf, Antigravity, Claude Code, Gemini, and Codex (OpenAI).
@@ -196,13 +196,22 @@ A: Yes. When saving a prompt, set visibility to "Public" to share it with the co
 - **Pro $9/mo** — 200 enhancements/month
 - **Enterprise $15/mo** — unlimited enhancements
 - **Lifetime from $69 (one-time, BYOK)** — unlimited forever using your own OpenAI, Anthropic (Claude), Google (Gemini), or xAI (Grok) API key. Keys are entered locally in the editor, stored in globalState, never stored on PromptDC servers, and sent transiently through PromptDC's backend per request.
+- **No free plan**, no free trial, no free credits. 14-day money-back guarantee on the first purchase.
 
 ---
 
-## Other Platforms
+## More from PromptDC
 
-- [PromptDC for VS Code](https://marketplace.visualstudio.com/items?itemName=promptdc.promptdc-vscode) — VS Code extension
-- [PromptDC for Chrome](https://chromewebstore.google.com/detail/dandneiidpgdhdadiogkcikebchholpp) — Chrome extension (any selected text anywhere on the web)
+- [PromptDC for Desktop](https://promptdc.com/desktop-app) — the flagship app for macOS and Windows that enhances selected text in any app, browser, IDE chat panel or terminal ([Download](https://promptdc.com/download), [macOS](https://promptdc.com/desktop-app/mac), [Windows](https://promptdc.com/desktop-app/windows))
+- [PromptDC for Terminal](https://promptdc.com/terminal) — prompt enhancement inside Claude Code, Codex CLI, Gemini CLI, Grok and Agy
+- [PromptDC for Chrome](https://promptdc.com/features/chrome) — Chrome extension that rewrites editable web fields in place ([Chrome Web Store](https://chromewebstore.google.com/detail/dandneiidpgdhdadiogkcikebchholpp))
+- [PromptDC for VS Code](https://marketplace.visualstudio.com/items?itemName=PromptDC.promptdc-vscode) — VS Code extension
+- [Free tools](https://promptdc.com/tools) — 118 free browser tools
+- Other GitHub repositories:
+  - [PromptDC Overview](https://github.com/Pvisilias/promptdc)
+  - [PromptDC for Desktop](https://github.com/Pvisilias/promptdc-desktop_app)
+  - [PromptDC for Chrome](https://github.com/Pvisilias/promptdc-chrome)
+  - [PromptDC for VS Code](https://github.com/Pvisilias/promptdc-vscode)
 
 ---
 
