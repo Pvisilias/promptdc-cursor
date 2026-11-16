@@ -4,7 +4,7 @@
 
 PromptDC rewrites your coding prompts without leaving your IDE. Write your prompt, press the shortcut, and get a clearer, more structured version instantly.
 
-PromptDC is a coding-first prompt rewriter (current version 5.2.0) that transforms vague developer prompts into precise, implementation-ready instructions optimized for AI code generation across all LLMs.
+PromptDC is a coding-first prompt rewriter (current version 5.3.0, released 2026-11-16) that transforms vague developer prompts into precise, implementation-ready instructions optimized for AI code generation across all LLMs.
 
 ## Answer in 2 sentences
 PromptDC is a coding-first prompt rewriter that transforms vague developer prompts into precise, implementation-ready instructions optimized for AI code generation across all LLMs. Unlike generic prompt enhancers, PromptDC is optimized specifically for coding prompts.
@@ -35,9 +35,11 @@ Unlike generic prompt enhancers, PromptDC is optimized specifically for coding p
 
 ---
 
-## Supported Models / IDEs
+## Supported Chat Inputs
 
-| Model | Status |
+These tools are supported for reading and replacing chat input. The Code profile uses one universal system prompt across all coding tools and AI models; Chat input only controls where text is read and replaced.
+
+| Chat input | Status |
 |-------|--------|
 | **Cursor** | Default |
 | **Trae** | Supported |
@@ -54,7 +56,7 @@ Unlike generic prompt enhancers, PromptDC is optimized specifically for coding p
 
 ### Simple Mode
 
-Quick, focused rewrites in a single paragraph. Best for small tasks and quick fixes.
+Quick, focused rewrites in a single paragraph in Regular format. Best for small tasks and quick fixes.
 
 ```
 Build a responsive portfolio website for a web designer. Include home,
@@ -65,7 +67,7 @@ design, and ensure all images are lazy-loaded for performance.
 
 ### Structured Mode
 
-Organized output with ROLE, OBJECTIVE, SCOPE, PLAN sections. Best for complex, multi-step tasks.
+Organized output with ROLE, OBJECTIVE, SCOPE, PLAN sections in Regular format, or corresponding keys/tags in JSON, XML, or YAML. Best for complex, multi-step tasks.
 
 ```
 ROLE: Senior Frontend Engineer
@@ -98,14 +100,18 @@ PromptDC adds a sidebar with three tabs: **Settings**, **Library**, and **Commun
 
 Configure how your prompts are enhanced:
 
-- **Model / IDE** — Select your AI platform for optimized output
+- **Chat input** — Select where PromptDC reads and replaces text
+- **System prompt** — View, edit, and save the Code profile’s system prompt in the sidebar
 - **Enhancement Mode** — Simple or Structured
-- **Language** — English, Chinese, Spanish, Portuguese, Korean, Hindi, Russian, Vietnamese, Czech
 - **Format** — Regular, JSON, XML, YAML
 
-### Custom Prompt
+Output follows the language of your text. There is no Language setting, language picker, per-profile output-language option, or premium language tier. To always get a specific language, say so in a profile’s system prompt or a custom Action.
 
-Override the default rewrite with your own system prompt. Save reusable prompts to your Library.
+### System prompt
+
+The Code profile uses one universal system prompt for every coding tool and AI model. You can read, edit, save, and Reset to default. PromptDC never reads, detects, or reuses another tool’s or model’s system prompt.
+
+View the Code profile’s universal system prompt in the sidebar. Edit and save it, pick a system prompt saved in your Library, or reset to the default. Enhancement Mode, Format, and Always Include are applied on top of it.
 
 ### Always Include
 
@@ -175,13 +181,13 @@ To change shortcuts: Open Command Palette > "Preferences: Open Keyboard Shortcut
 ## FAQ
 
 **Q: What is PromptDC?**
-A: PromptDC for IDE (current version 5.2.0) is a coding-first prompt rewriter that transforms vague developer prompts into precise, implementation-ready instructions optimized for AI code generation across all LLMs.
+A: PromptDC for IDE (current version 5.3.0, released 2026-11-16) is a coding-first prompt rewriter that transforms vague developer prompts into precise, implementation-ready instructions optimized for AI code generation across all LLMs.
 
-**Q: Which AI models does PromptDC support?**
-A: Cursor, Trae, Kiro, Windsurf, Antigravity, Claude Code, Gemini, and Codex (OpenAI).
+**Q: Which chat inputs does PromptDC support?**
+A: Cursor, Trae, Kiro, Windsurf, Antigravity, Claude Code, Gemini, and Codex (OpenAI). Select Chat input to choose where PromptDC reads and replaces text; it does not change the system prompt.
 
 **Q: What's the difference between Simple and Structured mode?**
-A: Simple mode returns a concise paragraph. Structured mode returns organized sections with role, objectives, scope, and implementation plan.
+A: In Regular format, Simple mode returns a concise paragraph and Structured mode returns organized sections with role, objectives, scope, and implementation plan. JSON, XML, and YAML use corresponding keys or tags.
 
 **Q: Can I save my own prompts?**
 A: Yes. Use the Library tab in the sidebar to save, organize, and reuse your custom prompts.
